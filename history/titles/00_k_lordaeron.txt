@@ -265,7 +265,7 @@ c_skittering_dark = {
 	}
 	#Lawlessness after Lordaeron's collapse
 	603.5.1={
-		holder = 52057 #Mug'thol
+		holder = 52057 # Mug'thol
 		liege=0
 	}
 	#Joins Sylvanas' forces
