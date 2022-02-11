@@ -54,11 +54,7 @@
  twisting_nether_return_years:0 "#V [GuiScope.SetRoot( GetPlayer.MakeScope ).ScriptValue( 'return_to_twisting_nether_min' )|0]-[GuiScope.SetRoot( GetPlayer.MakeScope ).ScriptValue( 'return_to_twisting_nether_max' )|0]#!"
  
  game_concept_twisting_nether:0 "Twisting Nether"
-<<<<<<< HEAD
- game_concept_twisting_nether_desc:0 "Instead of [character_death_dying|E], [characters|E] with [GetTrait('being_demon').GetName( GetNullCharacter )|V] [trait|E] return to the Twisting Nether.\n\nThey get [GetTrait('in_twisting_nether').GetName( GetNullCharacter )|V] [trait|E] but can return to Azeroth in $twisting_nether_return_years$ years.\n\nReturning costs #V 2#! [prestige_level|E] and increases [stress|E].\n\nDemons can't return if they...\n$EFFECT_LIST_BULLET$Vanish\n$EFFECT_LIST_BULLET$Are sacrificed\n$EFFECT_LIST_BULLET$Commit suicide\n$EFFECT_LIST_BULLET$Are scared to death"
-=======
  game_concept_twisting_nether_desc:0 "Instead of [character_death_dying|E], [characters|E] with [GetTrait('being_demon').GetName( GetNullCharacter )] [trait|E] return to the Twisting Nether.\n\nThey get [GetTrait('in_twisting_nether').GetName( GetNullCharacter )] [trait|E] but can return to Azeroth in $twisting_nether_return_years$ years.\n\nReturning costs #V 2#! [prestige_level|E] and increases [stress|E].\n\nDemons can't return if they...\n$EFFECT_LIST_BULLET$Vanish\n$EFFECT_LIST_BULLET$Are sacrificed\n$EFFECT_LIST_BULLET$Commit suicide\n$EFFECT_LIST_BULLET$Are scared to death"
->>>>>>> parent of 0207176d0 ([Issue #814] Highlight traits)
  
  game_concept_wc_incapable:0 "Incapable"
  game_concept_wc_incapable_desc:0 "Incapable characters cannot take actions independently due to severe illness or being isolated."
@@ -100,6 +96,6 @@
  game_concept_plague_scheme:0 "Plague Scheme"
  game_concept_plague:0 "Plague"
  game_concept_plagued:0 "Plagued"
- game_concept_plague_scheme_desc:0 "A [hostile_scheme|E] to provoke a disease outbreak that turns people [GetTrait('being_undead').GetName(GetNullCharacter)|V]. It may spread to neighboring provinces.\n\nThe [scourge|E] start a [war|E] and may take $game_concept_plagued$ [counties|E] if won. Also, every $game_concept_plagued$ [county|E] gives [special_troops|E] based on [development|E].\n\nIf the $game_concept_plague_scheme$ is successful, [agents|E] convert to [scheme_owner_possessive|E] [faith|E].\n\nOnly [GetTrait('creature_human').GetName(GetNullCharacter)|V] characters and $human_group$ provinces are vulnerable."
+ game_concept_plague_scheme_desc:0 "A [hostile_scheme|E] to provoke a disease outbreak that turns people [GetTrait('being_undead').GetName(GetNullCharacter)]. It may spread to neighboring provinces.\n\nThe [scourge|E] start a [war|E] and may take $game_concept_plagued$ [counties|E] if won. Also, every $game_concept_plagued$ [county|E] gives [special_troops|E] based on [development|E].\n\nIf the $game_concept_plague_scheme$ is successful, [agents|E] convert to [scheme_owner_possessive|E] [faith|E].\n\nOnly [GetTrait('creature_human').GetName(GetNullCharacter)] characters and $human_group$ provinces are vulnerable."
 
  game_concept_scheme_owner_possessive:0 "Scheme Owner's"
