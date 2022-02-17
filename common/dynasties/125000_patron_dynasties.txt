@@ -242,3 +242,8 @@
 	name = "dynn_Ordersong"
 	culture = high_elf 
 }
+
+125061 = {
+	name = "dynn_Boarsblood"
+	culture = warsong 
+}
