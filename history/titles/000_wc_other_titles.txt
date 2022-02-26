@@ -456,6 +456,9 @@ d_murkgill = {
 	573.1.1={
 		holder=34005
 	}
+	583.1.1={
+		holder=0
+	}
 }
 
 d_marsh = {
