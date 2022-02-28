@@ -883,332 +883,431 @@ major_decisions.2001 = {
 
 	option = {
 		trigger = {
-				any_sub_realm_barony = { this = title:b_karazhan }
-				title:b_karazhan = {
-						county = { development_level >= low_development_level }
-						#title_province = { has_special_building_slot = no }       
-				}
+						any_sub_realm_barony = { this = title:b_karazhan }
+						title:b_karazhan  = {
+										county = { development_level >= medium_development_level }
+										title:b_karazhan.title_province = { NOT = { exists = var:university } }
+						}
 		}
 		title:b_karazhan.title_province = {
-				add_special_building_slot = generic_university
-				set_variable = { #To unlock the building
-						name = university
-						value = yes
-				}
-				title:b_karazhan = {
 						if = {
-								limit = { NOT = { holder = root } }
-								holder = {
-										add_opinion = {
-												target = root
-												modifier = pleased_opinion
-												opinion = 30
-										}
+								limit = {
+										has_special_building_slot = no
 								}
+								add_special_building_slot = generic_university
+								add_special_building = generic_university
 						}
-				}
+						else = {
+								add_special_building = generic_university
+						}
+						set_variable = { #To unlock the building
+										name = university
+										value = yes
+						}
+						title:b_karazhan = {
+										if = {
+												limit = { NOT = { holder = root } }
+												holder = {
+																add_opinion = {
+																				target = root
+																				modifier = pleased_opinion
+																				opinion = 30
+																}
+												}
+										}
+						}
 		}
 		name = major_decisions.2001.b_karazhan
 	}
 
 	option = {
-			trigger = {
-					any_sub_realm_barony = { this = title:b_caer_darrow }
-					title:b_caer_darrow  = {
-							county = { development_level >= low_development_level }
-							#title_province = { has_special_building_slot = no }
-					}
-			}
-			title:b_caer_darrow.title_province = {
-					add_special_building_slot = generic_university
-					set_variable = { #To unlock the building
-							name = university
-							value = yes
-					}
-					title:b_caer_darrow = {
-							if = {
-									limit = { NOT = { holder = root } }
-									holder = {
-											add_opinion = {
-													target = root
-													modifier = pleased_opinion
-													opinion = 30
-											}
-									}
-							}
-					}
-			}
-			name = major_decisions.2001.b_caer_darrow
+		trigger = {
+						any_sub_realm_barony = { this = title:b_caer_darrow }
+						title:b_caer_darrow  = {
+										county = { development_level >= medium_development_level }
+										title:b_caer_darrow.title_province = { NOT = { exists = var:university } }
+						}
+		}
+		title:b_caer_darrow.title_province = {
+						if = {
+								limit = {
+										has_special_building_slot = no
+								}
+								add_special_building_slot = generic_university
+								add_special_building = generic_university
+						}
+						else = {
+								add_special_building = generic_university
+						}
+						set_variable = { #To unlock the building
+										name = university
+										value = yes
+						}
+						title:b_caer_darrow = {
+										if = {
+												limit = { NOT = { holder = root } }
+												holder = {
+																add_opinion = {
+																				target = root
+																				modifier = pleased_opinion
+																				opinion = 30
+																}
+												}
+										}
+						}
+		}
+		name = major_decisions.2001.b_caer_darrow
 	}
 
 	option = {
-			trigger = {
-					any_sub_realm_barony = { this = title:b_stormwind }
-					title:b_stormwind = {
-							county = { development_level >= low_development_level }
-							#title_province = { has_special_building_slot = no }
-					}
-			}
-			title:b_stormwind.title_province = {
-					add_special_building_slot = generic_university
-					set_variable = { #To unlock the building
-							name = university
-							value = yes
-					}
-					title:b_stormwind = {
-							if = {
-									limit = { NOT = { holder = root } }
-									holder = {
-											add_opinion = {
-													target = root
-													modifier = pleased_opinion
-													opinion = 30
-											}
-									}
-							}
-					}
-			}
-			name = major_decisions.2001.b_stormwind
+		trigger = {
+						any_sub_realm_barony = { this = title:b_stormwind }
+						title:b_stormwind  = {
+										county = { development_level >= medium_development_level }
+										title:b_stormwind.title_province = { NOT = { exists = var:university } }
+						}
+		}
+		title:b_stormwind.title_province = {
+						if = {
+								limit = {
+										has_special_building_slot = no
+								}
+								add_special_building_slot = generic_university
+								add_special_building = generic_university
+						}
+						else = {
+								add_special_building = generic_university
+						}
+						set_variable = { #To unlock the building
+										name = university
+										value = yes
+						}
+						title:b_stormwind = {
+										if = {
+												limit = { NOT = { holder = root } }
+												holder = {
+																add_opinion = {
+																				target = root
+																				modifier = pleased_opinion
+																				opinion = 30
+																}
+												}
+										}
+						}
+		}
+		name = major_decisions.2001.b_stormwind
 	}
 
 	option = {
-			trigger = {
-					any_sub_realm_barony = { this = title:b_dalaran }
-					title:b_dalaran = {
-							county = { development_level >= medium_development_level }
-							title_province = { has_special_building_slot = no }
-					}
-			}
-			title:b_dalaran.title_province = {
-					add_special_building_slot = generic_university
-					set_variable = { #To unlock the building
-							name = university
-							value = yes
-					}
-					title:b_dalaran = {
-							if = {
-									limit = { NOT = { holder = root } }
-									holder = {
-											add_opinion = {
-													target = root
-													modifier = pleased_opinion
-													opinion = 30
-											}
-									}
-							}
-					}
-			}
-			name = major_decisions.2001.b_dalaran
+		trigger = {
+						any_sub_realm_barony = { this = title:b_dalaran }
+						title:b_dalaran  = {
+										county = { development_level >= medium_development_level }
+										title:b_dalaran.title_province = { NOT = { exists = var:university } }
+						}
+		}
+		title:b_dalaran.title_province = {
+						if = {
+								limit = {
+										has_special_building_slot = no
+								}
+								add_special_building_slot = generic_university
+								add_special_building = generic_university
+						}
+						else = {
+								add_special_building = generic_university
+						}
+						set_variable = { #To unlock the building
+										name = university
+										value = yes
+						}
+						title:b_dalaran = {
+										if = {
+												limit = { NOT = { holder = root } }
+												holder = {
+																add_opinion = {
+																				target = root
+																				modifier = pleased_opinion
+																				opinion = 30
+																}
+												}
+										}
+						}
+		}
+		name = major_decisions.2001.b_dalaran
 	}
 
 	option = {
-			trigger = {
-					any_sub_realm_barony = { this = title:b_lordaeron }
-					title:b_lordaeron = {
-							county = { development_level >= medium_development_level }
-							title_province = { has_special_building_slot = no }
-					}
-			}
-			title:b_lordaeron.title_province = {
-					add_special_building_slot = generic_university
-					set_variable = { #To unlock the building
-							name = university
-							value = yes
-					}
-					title:b_lordaeron = {
-							if = {
-									limit = { NOT = { holder = root } }
-									holder = {
-											add_opinion = {
-													target = root
-													modifier = pleased_opinion
-													opinion = 30
-											}
-									}
-							}
-					}
-			}
-			name = major_decisions.2001.b_lordaeron
+		trigger = {
+						any_sub_realm_barony = { this = title:b_lordaeron }
+						title:b_lordaeron  = {
+										county = { development_level >= medium_development_level }
+										title:b_lordaeron.title_province = { NOT = { exists = var:university } }
+						}
+		}
+		title:b_lordaeron.title_province = {
+						if = {
+								limit = {
+										has_special_building_slot = no
+								}
+								add_special_building_slot = generic_university
+								add_special_building = generic_university
+						}
+						else = {
+								add_special_building = generic_university
+						}
+						set_variable = { #To unlock the building
+										name = university
+										value = yes
+						}
+						title:b_lordaeron = {
+										if = {
+												limit = { NOT = { holder = root } }
+												holder = {
+																add_opinion = {
+																				target = root
+																				modifier = pleased_opinion
+																				opinion = 30
+																}
+												}
+										}
+						}
+		}
+		name = major_decisions.2001.b_lordaeron
 	}
 
 	option = {
-			trigger = {
-					any_sub_realm_barony = { this = title:b_sunwell_plateau }
-					title:b_sunwell_plateau = {
-							county = { development_level >= medium_development_level }
-							title_province = { has_special_building_slot = no }
-					}
-			}
-			title:b_sunwell_plateau.title_province = {
-					add_special_building_slot = generic_university
-					set_variable = { #To unlock the building
-							name = university
-							value = yes
-					}
-					title:b_sunwell_plateau = {
-							if = {
-									limit = { NOT = { holder = root } }
-									holder = {
-											add_opinion = {
-													target = root
-													modifier = pleased_opinion
-													opinion = 30
-											}
-									}
-							}
-					}
-			}
-			name = major_decisions.2001.b_sunwell_plateau
+		trigger = {
+						any_sub_realm_barony = { this = title:b_sunwell_plateau }
+						title:b_sunwell_plateau  = {
+										county = { development_level >= medium_development_level }
+										title:b_sunwell_plateau.title_province = { NOT = { exists = var:university } }
+						}
+		}
+		title:b_sunwell_plateau.title_province = {
+						if = {
+								limit = {
+										has_special_building_slot = no
+								}
+								add_special_building_slot = generic_university
+								add_special_building = generic_university
+						}
+						else = {
+								add_special_building = generic_university
+						}
+						set_variable = { #To unlock the building
+										name = university
+										value = yes
+						}
+						title:b_sunwell_plateau = {
+										if = {
+												limit = { NOT = { holder = root } }
+												holder = {
+																add_opinion = {
+																				target = root
+																				modifier = pleased_opinion
+																				opinion = 30
+																}
+												}
+										}
+						}
+		}
+		name = major_decisions.2001.b_sunwell_plateau
 	}
 
 	option = {
-			trigger = {
-					any_sub_realm_barony = { this = title:b_ulduar }
-					title:b_ulduar = {
-							county = { development_level >= medium_development_level }
-							title_province = { has_special_building_slot = no }
-					}
-			}
-			title:b_ulduar.title_province = {
-					add_special_building_slot = generic_university
-					set_variable = { #To unlock the building
-							name = university
-							value = yes
-					}
-					title:b_ulduar = {
-							if = {
-									limit = { NOT = { holder = root } }
-									holder = {
-											add_opinion = {
-													target = root
-													modifier = pleased_opinion
-													opinion = 30
-											}
-									}
-							}
-					}
-			}
-			name = major_decisions.2001.b_ulduar
+		trigger = {
+						any_sub_realm_barony = { this = title:b_ulduar }
+						title:b_ulduar  = {
+										county = { development_level >= medium_development_level }
+										title:b_ulduar.title_province = { NOT = { exists = var:university } }
+						}
+		}
+		title:b_ulduar.title_province = {
+						if = {
+								limit = {
+										has_special_building_slot = no
+								}
+								add_special_building_slot = generic_university
+								add_special_building = generic_university
+						}
+						else = {
+								add_special_building = generic_university
+						}
+						set_variable = { #To unlock the building
+										name = university
+										value = yes
+						}
+						title:b_ulduar = {
+										if = {
+												limit = { NOT = { holder = root } }
+												holder = {
+																add_opinion = {
+																				target = root
+																				modifier = pleased_opinion
+																				opinion = 30
+																}
+												}
+										}
+						}
+		}
+		name = major_decisions.2001.b_ulduar
 	}
 
 	option = {
-			trigger = {
-					any_sub_realm_barony = { this = title:b_nexus }
-					title:b_nexus = {
-							county = { development_level >= medium_development_level }
-							title_province = { has_special_building_slot = no }
-					}
-			}
-			title:b_nexus.title_province = {
-					add_special_building_slot = generic_university
-					set_variable = { #To unlock the building
-							name = university
-							value = yes
-					}
-					title:b_nexus = {
-							if = {
-									limit = { NOT = { holder = root } }
-									holder = {
-											add_opinion = {
-													target = root
-													modifier = pleased_opinion
-													opinion = 30
-											}
-									}
-							}
-					}
-			}
-			name = major_decisions.2001.b_nexus
+		trigger = {
+						any_sub_realm_barony = { this = title:b_nexus }
+						title:b_nexus  = {
+										county = { development_level >= medium_development_level }
+										title:b_nexus.title_province = { NOT = { exists = var:university } }
+						}
+		}
+		title:b_nexus.title_province = {
+						if = {
+								limit = {
+										has_special_building_slot = no
+								}
+								add_special_building_slot = generic_university
+								add_special_building = generic_university
+						}
+						else = {
+								add_special_building = generic_university
+						}
+						set_variable = { #To unlock the building
+										name = university
+										value = yes
+						}
+						title:b_nexus = {
+										if = {
+												limit = { NOT = { holder = root } }
+												holder = {
+																add_opinion = {
+																				target = root
+																				modifier = pleased_opinion
+																				opinion = 30
+																}
+												}
+										}
+						}
+		}
+		name = major_decisions.2001.b_nexus
 	}
 
 	option = {
-			trigger = {
-					any_sub_realm_barony = { this = title:b_nordrassil }
-					title:b_nordrassil = {
-							county = { development_level >= medium_development_level }
-							title_province = { has_special_building_slot = no }
-					}
-			}
-			title:b_nordrassil.title_province = {
-					add_special_building_slot = generic_university
-					set_variable = { #To unlock the building
-							name = university
-							value = yes
-					}
-					title:b_nordrassil = {
-							if = {
-									limit = { NOT = { holder = root } }
-									holder = {
-											add_opinion = {
-													target = root
-													modifier = pleased_opinion
-													opinion = 30
-											}
-									}
-							}
-					}
-			}
-			name = major_decisions.2001.b_nordrassil
+		trigger = {
+						any_sub_realm_barony = { this = title:b_nordrassil }
+						title:b_nordrassil  = {
+										county = { development_level >= medium_development_level }
+										title:b_nordrassil.title_province = { NOT = { exists = var:university } }
+						}
+		}
+		title:b_nordrassil.title_province = {
+						if = {
+								limit = {
+										has_special_building_slot = no
+								}
+								add_special_building_slot = generic_university
+								add_special_building = generic_university
+						}
+						else = {
+								add_special_building = generic_university
+						}
+						set_variable = { #To unlock the building
+										name = university
+										value = yes
+						}
+						title:b_nordrassil = {
+										if = {
+												limit = { NOT = { holder = root } }
+												holder = {
+																add_opinion = {
+																				target = root
+																				modifier = pleased_opinion
+																				opinion = 30
+																}
+												}
+										}
+						}
+		}
+		name = major_decisions.2001.b_nordrassil
 	}
 
 	option = {
-			trigger = {
-					any_sub_realm_barony = { this = title:b_orgrimmar }
-					title:b_orgrimmar = {
-							county = { development_level >= medium_development_level }
-							title_province = { has_special_building_slot = no }
-					}
-			}
-			title:b_orgrimmar.title_province = {
-					add_special_building_slot = generic_university
-					set_variable = { #To unlock the building
-							name = university
-							value = yes
-					}
-					title:b_orgrimmar = {
-							if = {
-									limit = { NOT = { holder = root } }
-									holder = {
-											add_opinion = {
-													target = root
-													modifier = pleased_opinion
-													opinion = 30
-											}
-									}
-							}
-					}
-			}
-			name = major_decisions.2001.b_orgrimmar
+		trigger = {
+						any_sub_realm_barony = { this = title:b_orgrimmar }
+						title:b_orgrimmar  = {
+										county = { development_level >= medium_development_level }
+										title:b_orgrimmar.title_province = { NOT = { exists = var:university } }
+						}
+		}
+		title:b_orgrimmar.title_province = {
+						if = {
+								limit = {
+										has_special_building_slot = no
+								}
+								add_special_building_slot = generic_university
+								add_special_building = generic_university
+						}
+						else = {
+								add_special_building = generic_university
+						}
+						set_variable = { #To unlock the building
+										name = university
+										value = yes
+						}
+						title:b_orgrimmar = {
+										if = {
+												limit = { NOT = { holder = root } }
+												holder = {
+																add_opinion = {
+																				target = root
+																				modifier = pleased_opinion
+																				opinion = 30
+																}
+												}
+										}
+						}
+		}
+		name = major_decisions.2001.b_orgrimmar
 	}
 
 	option = {
-			trigger = {
-					any_sub_realm_barony = { this = title:b_xuen }
-					title:b_xuen = {
-							county = { development_level >= medium_development_level }
-							title_province = { has_special_building_slot = no }
-					}
-			}
-			title:b_xuen.title_province = {
-					add_special_building_slot = generic_university
-					set_variable = { #To unlock the building
-							name = university
-							value = yes
-					}
-					title:b_xuen = {
-							if = {
-									limit = { NOT = { holder = root } }
-									holder = {
-											add_opinion = {
-													target = root
-													modifier = pleased_opinion
-													opinion = 30
-											}
-									}
-							}
-					}
-			}
-			name = major_decisions.2001.b_xuen
+		trigger = {
+						any_sub_realm_barony = { this = title:b_xuen }
+						title:b_xuen  = {
+										county = { development_level >= medium_development_level }
+										title:b_xuen.title_province = { NOT = { exists = var:university } }
+						}
+		}
+		title:b_xuen.title_province = {
+						if = {
+								limit = {
+										has_special_building_slot = no
+								}
+								add_special_building_slot = generic_university
+								add_special_building = generic_university
+						}
+						else = {
+								add_special_building = generic_university
+						}
+						set_variable = { #To unlock the building
+										name = university
+										value = yes
+						}
+						title:b_xuen = {
+										if = {
+												limit = { NOT = { holder = root } }
+												holder = {
+																add_opinion = {
+																				target = root
+																				modifier = pleased_opinion
+																				opinion = 30
+																}
+												}
+										}
+						}
+		}
+		name = major_decisions.2001.b_xuen
 	}
 
 	option = { # fallback in case development somehow tumbles
