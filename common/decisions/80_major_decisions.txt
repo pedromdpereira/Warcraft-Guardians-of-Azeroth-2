@@ -591,10 +591,10 @@ found_university_decision = {
 					title:b_karazhan.title_province = { NOT = { exists = var:university } }
 			}
 			AND = {
-					title:b_karazhan.county = { development_level >= low_development_level }
+					title:b_karazhan.county = { development_level >= medium_development_level }
 					custom_description = {
 							text = no_special_building_slot
-							#title:b_karazhan.title_province = { has_special_building_slot = no }
+							title:b_karazhan.title_province = { has_special_building = no }
 					}
 			}
 		}
@@ -605,10 +605,10 @@ found_university_decision = {
 					title:b_caer_darrow.title_province = { NOT = { exists = var:university } }
 			}
 			AND = {
-					title:b_caer_darrow.county = { development_level >= low_development_level }
+					title:b_caer_darrow.county = { development_level >= medium_development_level }
 					custom_description = {
 							text = no_special_building_slot
-							#title:b_caer_darrow.title_province = { has_special_building_slot = no }
+							title:b_caer_darrow.title_province = { has_special_building = no }
 					}
 			}
 		}
@@ -619,11 +619,11 @@ found_university_decision = {
 					title:b_stormwind.title_province = { NOT = { exists = var:university } }
 			}
 			AND = {
-					title:b_stormwind.county = { development_level >= low_development_level }
-					#custom_description = {
-					#		text = no_special_building_slot
-					#		title:b_stormwind.title_province = { has_special_building_slot = no }
-					#}
+					title:b_stormwind.county = { development_level >= medium_development_level }
+					custom_description = {
+							text = no_special_building_slot
+							title:b_stormwind.title_province = { has_special_building = no }
+					}
 			}
 		}
 
@@ -636,7 +636,7 @@ found_university_decision = {
 					title:b_dalaran.county = { development_level >= medium_development_level }
 					custom_description = {
 							text = no_special_building_slot
-							title:b_dalaran.title_province = { has_special_building_slot = no }
+							title:b_dalaran.title_province = { has_special_building = no }
 					}
 			}
 		}
@@ -650,7 +650,7 @@ found_university_decision = {
 					title:b_lordaeron.county = { development_level >= medium_development_level }
 					custom_description = {
 							text = no_special_building_slot
-							title:b_lordaeron.title_province = { has_special_building_slot = no }
+							title:b_lordaeron.title_province = { has_special_building = no }
 					}
 			}
 		}
@@ -664,7 +664,7 @@ found_university_decision = {
 					title:b_sunwell_plateau.county = { development_level >= medium_development_level }
 					custom_description = {
 							text = no_special_building_slot
-							title:b_sunwell_plateau.title_province = { has_special_building_slot = no }
+							title:b_sunwell_plateau.title_province = { has_special_building = no }
 					}
 			}
 		}
@@ -678,7 +678,7 @@ found_university_decision = {
 					title:b_ulduar.county = { development_level >= medium_development_level }
 					custom_description = {
 							text = no_special_building_slot
-							title:b_ulduar.title_province = { has_special_building_slot = no }
+							title:b_ulduar.title_province = { has_special_building = no }
 					}
 			}
 		}
@@ -692,7 +692,7 @@ found_university_decision = {
 					title:b_nexus.county = { development_level >= medium_development_level }
 					custom_description = {
 							text = no_special_building_slot
-							title:b_nexus.title_province = { has_special_building_slot = no }
+							title:b_nexus.title_province = { has_special_building = no }
 					}
 			}
 		}
@@ -706,7 +706,7 @@ found_university_decision = {
 					title:b_nordrassil.county = { development_level >= medium_development_level }
 					custom_description = {
 							text = no_special_building_slot
-							title:b_nordrassil.title_province = { has_special_building_slot = no }
+							title:b_nordrassil.title_province = { has_special_building = no }
 					}
 			}
 		}
@@ -720,7 +720,7 @@ found_university_decision = {
 					title:b_orgrimmar.county = { development_level >= medium_development_level }
 					custom_description = {
 							text = no_special_building_slot
-							title:b_orgrimmar.title_province = { has_special_building_slot = no }
+							title:b_orgrimmar.title_province = { has_special_building = no }
 					}
 			}
 		}
@@ -734,7 +734,7 @@ found_university_decision = {
 					title:b_xuen.county = { development_level >= medium_development_level }
 					custom_description = {
 							text = no_special_building_slot
-							title:b_xuen.title_province = { has_special_building_slot = no }
+							title:b_xuen.title_province = { has_special_building = no }
 					}
 			}
 		}
