@@ -838,18 +838,6 @@ major_decisions.2001 = {
 				trigger = {
 					calc_true_if = {
 						amount >= 2
-						# any_sub_realm_barony = { this = title:b_fes }
-						# any_sub_realm_barony = { this = title:b_cairo }
-						# any_sub_realm_barony = { this = title:b_bologna }
-						# any_sub_realm_barony = { this = title:b_salamanca }
-						# any_sub_realm_barony = { this = title:b_madrid }
-						# any_sub_realm_barony = { this = title:b_oxford }
-						# any_sub_realm_barony = { this = title:b_cambridge }
-						# any_sub_realm_barony = { this = title:b_padua }
-						# any_sub_realm_barony = { this = title:b_siena }
-						# any_sub_realm_barony = { this = title:b_coimbra }
-						# any_sub_realm_barony = { this = title:b_napoli }
-						# any_sub_realm_barony = { this = title:b_tirakka }
 						any_sub_realm_barony = { this = title:b_karazhan }
 						any_sub_realm_barony = { this = title:b_caer_darrow }
 						any_sub_realm_barony = { this = title:b_stormwind }
