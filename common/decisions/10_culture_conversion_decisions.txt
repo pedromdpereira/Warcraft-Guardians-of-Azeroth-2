@@ -7,6 +7,9 @@
 	is_shown = {
 		is_landed = yes
 		primary_title.tier > tier_barony
+		capital_province.culture = {
+				has_same_culture_heritage = root.culture
+			}
 		NOT = { culture = capital_province.culture }
 		NAND = {
 			is_ai = yes
