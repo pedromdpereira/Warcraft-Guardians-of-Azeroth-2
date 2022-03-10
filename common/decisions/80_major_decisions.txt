@@ -557,28 +557,13 @@ found_university_decision = {
 
 	is_shown = {
 		highest_held_title_tier >= tier_duchy
-		any_sub_realm_barony = {
-			OR = { #A place where universities historically existed early
-				this = title:b_karazhan
-				this = title:b_caer_darrow # Scholomance
-				this = title:b_stormwind
-				this = title:b_dalaran
-				this = title:b_lordaeron
-				this = title:b_sunwell_plateau
-				this = title:b_ulduar
-				this = title:b_nexus
-				this = title:b_nordrassil
-				this = title:b_orgrimmar
-				this = title:b_xuen
-			}
-			title_province = {
-				NOR = {
-					exists = var:university
-				
-					# Warcraft
-				}
-			}
+		this.title_province = { NOT = { exists = var:university } }
+		this.county = { development_level >= medium_development_level }
+		custom_description = {
+			text = no_special_building
+			this.title_province = { has_special_building = no }
 		}
+			
 	}
 
 	is_valid = {
